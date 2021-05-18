@@ -1,0 +1,88 @@
+/* 
+    Cores: 
+    Escritas em ingles
+    Podem estar em Hexadecimal
+    Podem estar em rgb
+    Podem estar em HSL
+
+
+    Cor principal: #1073B5
+
+    cor secundaria: #1F97CE
+
+    https://ngrok.com/download
+*/
+
+body{
+     /* background-image: url("https://cinepop.com.br/wp-content/uploads/2020/02/clube-das-winx-2.jpg"); */
+    /* background-repeat: no-repeat;
+    background-size: 100%; */
+
+    background-image: linear-gradient(to bottom right, var(--cor-principal), var(--cor-secundaria));
+    background-image: linear-gradient(var(--cor-principal), var(--cor-secundaria));
+    background-repeat: no-repeat;
+    background-size: 100%; 
+  ;
+}
+
+.box-login {
+    max-width: 280px;
+    border: 1px solid var(--cor-borda);
+    background-color: var(--cor-secundaria);
+    margin: auto;
+    margin-top: 70px;
+    padding: 25px;
+    padding-top: 0px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 rgb(50 50 50 / 82%);
+    min-height: 90%;
+}
+
+.logo {
+    text-align: center;
+    color: var(--cor-principal);
+    font-size: 30px;
+}
+
+.grupo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#btn-entrar, input {
+    width: 100%; 
+    padding: 5px;
+    border: 0;
+    border-radius: 3px;
+}
+
+input {
+    border: 2px solid var(--cor-borda);
+
+}
+
+input:focus {
+    border: 2px solid var(--cor-principal);
+}
+
+#btn-entrar {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#btn-entrar:hover {
+    background-color: var(--cor-terciaria);
+}
+
+.grupo.grupo-final {
+    text-align: right;
+}
+
+.grupo > a {
+    color: var(--cor-principal);
+    font-size: 12px;
+    text-decoration: none; /*Remove o sublinhado do link*/
+    font-weight: 600;
+}
